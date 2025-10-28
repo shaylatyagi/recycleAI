@@ -13,20 +13,15 @@ You must have **Python 3.8+** and **Git** installed on your system.
 Open your Command Prompt (CMD) and run the following commands:
 
 ```bash
-# Clone the repository
-git clone [https://github.com/shaylatyagi/recycleAI](https://github.com/shaylatyagi/recycleAI)
+# 1. Clone the repository from your GitHub fork
+git clone https://github.com/shaylatyagi/recycleAI
 
-# Move into the project folder
+# 2. Move into the new project folder and install dependencies
 cd recycleAI
-
-# Install all required Python packages (FastAPI, Uvicorn, PyTorch, CLIP)
 pip install -r requirements.txt
 
-# Move into the project folder
-cd recycleAI
-
-# Install all required Python packages (FastAPI, Uvicorn, PyTorch, CLIP)
-pip install -r requirements.txt
+# 3. Start the application server
+python -m uvicorn main:app --reload
 ```
 Step 2: Start the Server
 Run the core application file using the Uvicorn ASGI server.
