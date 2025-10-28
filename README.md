@@ -20,8 +20,6 @@ git clone https://github.com/shaylatyagi/recycleAI
 cd recycleAI
 pip install -r requirements.txt
 
-# 3. Start the application server
-python -m uvicorn main:app --reload
 ```
 Step 2: Start the Server
 Run the core application file using the Uvicorn ASGI server.
